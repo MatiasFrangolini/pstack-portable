@@ -1,0 +1,10 @@
+**/references/review-state.json
+**/references/user-policy.md
+node_modules/
+.npm/
+.cache/
+work/
+outputs/
+*.log
+.DS_Store
+Thumbs.db

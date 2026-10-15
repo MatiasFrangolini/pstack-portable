@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "releaseVersion": "0.1.0",
+  "reviewedOn": "2026-10-15",
+  "reviewBasis": "Public portable adaptation review. Inherit reviewed-through baselines only for matching distributed files.",
+  "source": {
+    "repository": "https://github.com/cursor/plugins",
+    "scope": "pstack",
+    "ref": "main",
+    "commit": "e5136d82418d2db3165ea1050d17577cd618cc05"
+  },
+  "catalog": [
+    "architect",
+    "arena",
+    "automate-me",
+    "benchmark-checklist",
+    "blast-radius",
+    "bro",
+    "correct",
+    "create-verification-skill",
+    "figure-it-out",
+    "how",
+    "in-your-own-words",
+    "interrogate",
+    "ketchup",
+    "maintain-verification-skill",
+    "make-bot-ui",
+    "no-comments",
+    "poteto-help",
+    "poteto-mode",
+    "principle-attack-the-premise",
+    "principle-boundary-discipline",
+    "principle-build-the-lever",
+    "principle-encode-lessons-in-structure",
+    "principle-exhaust-the-design-space",
+    "principle-experience-first",
+    "principle-explain-the-number",
+    "principle-fix-root-causes",
+    "principle-foundational-thinking",
+    "principle-guard-the-context-window",
+    "principle-laziness-protocol",
+    "principle-make-operations-idempotent",
+    "principle-migrate-callers-then-delete-legacy-apis",
+    "principle-minimize-reader-load",
+    "principle-model-the-domain",
+    "principle-never-block-on-the-human",
+    "principle-outcome-oriented-execution",
+    "principle-prove-it-works",
+    "principle-redesign-from-first-principles",
+    "principle-separate-before-serializing-shared-state",
+    "principle-sequence-verifiable-units",
+    "principle-subtract-before-you-add",
+    "principle-test-behavior-not-implementation",
+    "principle-type-system-discipline",
+    "recall",
+    "reflect",
+    "setup-pstack",
+    "sharpen",
+    "show-me-your-work",
+    "swarm",
+    "tdd",
+    "teach",
+    "technical-writing",
+    "typescript-best-practices",
+    "unslop",
+    "why"
+  ],
+  "reviewedSkills": [
+    {
+      "localSkill": "pstack-architect",
+      "upstreamPath": "pstack/skills/architect",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "054af971d955c84e58828cea1c696206d98bc6809de275f2bbe13fd66d60a47a",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-arena",
+      "upstreamPath": "pstack/skills/arena",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "71c0262c792a58a987b715676d3a7e6a4dbd1db469509847b76f621750d4b030",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-benchmark-checklist",
+      "upstreamPath": "pstack/skills/benchmark-checklist",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "60359e7b85c7baf7849d0f7eef6129650462706e710b38b7cce80e750c75c998",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-blast-radius",
+      "upstreamPath": "pstack/skills/blast-radius",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "833e30af21a7c4bca0157e80d81efa88f187260386c198c061c516e66c949b72",
+      "outcome": "unchanged-upstream"
+    },
+    {
+      "localSkill": "pstack-correct",
+      "upstreamPath": "pstack/skills/correct",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "9535a2b74e40fd931edc4281ec011e96872e710cf0f9be0822b97199657d973c",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-create-verification-skill",
+      "upstreamPath": "pstack/skills/create-verification-skill",
+      "adaptedFromCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "f3ffb65b5d0827156c9a3939eb5a5c10e258b715fee6025c2ab52d650834f8af",
+      "outcome": "current-adaptation"
+    },
+    {
+      "localSkill": "pstack-figure-it-out",
+      "upstreamPath": "pstack/skills/figure-it-out",
+      "adaptedFromCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "31bd88e58dbdca9a96f0767b45b18b4cdd40e339aaa3fe8db7b8d414fa1ba0ae",
+      "outcome": "current-adaptation"
+    },
+    {
+      "localSkill": "pstack-how",
+      "upstreamPath": "pstack/skills/how",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "471f806ca5d2a00c4a7687537dde753fadd1871c9f2677a618624d04c1bfe4f4",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-interrogate",
+      "upstreamPath": "pstack/skills/interrogate",
+      "adaptedFromCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "d812dec03b3b20899bceb429df844c4909dec3a2789015bc859ce55f1f250c0f",
+      "outcome": "current-adaptation"
+    },
+    {
+      "localSkill": "pstack-ketchup",
+      "upstreamPath": "pstack/skills/ketchup",
+      "adaptedFromCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "fc1b6d97fe4095190bf7035683c51d0aaa9df94cc33497a3beb8cc32de01cd7f",
+      "outcome": "current-adaptation"
+    },
+    {
+      "localSkill": "pstack-maintain-verification-skill",
+      "upstreamPath": "pstack/skills/maintain-verification-skill",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "72e758aeb19e25ed707dc45b7da2cae0810e1e554891af4c7043fa9a6e0bb843",
+      "outcome": "unchanged-upstream"
+    },
+    {
+      "localSkill": "pstack-mode",
+      "upstreamPath": "pstack/skills/poteto-mode",
+      "adaptedFromCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "17b0449738d5d3c92bd0bae3eb96c1490a1bc23a1c837836f8741b1263f31a46",
+      "outcome": "current-adaptation"
+    },
+    {
+      "localSkill": "pstack-recall",
+      "upstreamPath": "pstack/skills/recall",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "40ffb23776a837f32f93a24c2e43f39cb3d7e651121518e8cf3481cac3d0f9b1",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-sharpen",
+      "upstreamPath": "pstack/skills/sharpen",
+      "adaptedFromCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "b9009d80219291e4350c0b57f84b0b3a9a8eea101c0ce5d92054f7f3205f7685",
+      "outcome": "current-adaptation"
+    },
+    {
+      "localSkill": "pstack-show-me-your-work",
+      "upstreamPath": "pstack/skills/show-me-your-work",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "52b638e822c425b93dd5eaf6439ece50190ac2e965480b0e165d1df4ace9a8de",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-swarm",
+      "upstreamPath": "pstack/skills/swarm",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "f062fbff31d91e24bc195615d1665d73b017677ab7ba5f994c8f87b15669d7f7",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-teach",
+      "upstreamPath": "pstack/skills/teach",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "73bfb059172f2e3d0a1eb60a472bb5d5616921379a47b08298f420d87108d1b4",
+      "outcome": "unchanged-upstream"
+    },
+    {
+      "localSkill": "pstack-typescript-best-practices",
+      "upstreamPath": "pstack/skills/typescript-best-practices",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "5838eabdb336c6be8a61b4fd076213f7d2208291433f5879232dead4ea28b3c1",
+      "outcome": "unchanged-upstream"
+    },
+    {
+      "localSkill": "pstack-unslop",
+      "upstreamPath": "pstack/skills/unslop",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "77f721973f5d0dd7c1e9f92905eae908a2497977cbcd87a8067acf33f3bc4bc8",
+      "outcome": "already-covered-or-declined"
+    },
+    {
+      "localSkill": "pstack-why",
+      "upstreamPath": "pstack/skills/why",
+      "adaptedFromCommit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "reviewedThroughCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "localFingerprint": "01fbbe117f44a98b8827f3f823ecd68dfe09e45e277213a47a4579780532c90b",
+      "outcome": "already-covered-or-declined"
+    }
+  ],
+  "incomplete": []
+}
