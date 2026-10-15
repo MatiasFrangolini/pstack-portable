@@ -1,6 +1,6 @@
 # pstack-portable
 
-21 portable engineering skills: 20 adapted from [Lauren Tan's pstack](https://github.com/cursor/plugins/tree/main/pstack) and one selective maintenance workflow.
+21 portable engineering skills: 20 adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack) by Lauren Tan ([@Poteto](https://x.com/poteto)) and one selective maintenance workflow.
 
 Use the model and reasoning settings already active in your chat. Discover the tools your harness actually provides. Keep parallel candidate generation and coverage opt-in. Preserve local adaptations when upstream changes.
 
@@ -112,4 +112,4 @@ The collection's format, references, provenance, and public-data boundaries are 
 
 ## License
 
-[MIT](LICENSE). Original pstack copyright: Lauren Tan. Portable adaptations and maintenance workflow: MatiasFrangolini. See [CREDITS.md](CREDITS.md) for the source snapshot and attribution.
+[MIT](LICENSE). Original pstack copyright: Lauren Tan ([@Poteto](https://x.com/poteto)). Portable adaptations and maintenance workflow: MatiasFrangolini. See [CREDITS.md](CREDITS.md) for the source snapshot and attribution.
