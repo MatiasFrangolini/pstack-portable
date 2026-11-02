@@ -1,10 +1,10 @@
 ---
 name: pstack-ketchup
-description: "Catch the user up on progress in the current chat since their previous message, including outcomes, remaining work, and decisions they own. Use for pstack-ketchup or a current-chat progress catch-up."
+description: "Catch the user up on progress in the current chat since their previous message, including outcomes, remaining work, and every pending decision with enough context to act. Use for pstack-ketchup or a current-chat progress catch-up."
 license: MIT
 metadata:
-  upstream: https://github.com/cursor/plugins/tree/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/ketchup
-  upstream-commit: e5136d82418d2db3165ea1050d17577cd618cc05
+  upstream: https://github.com/cursor/plugins/tree/88d47514b82e7c44f00f2b2a72ff6dd12158038c/pstack/skills/ketchup
+  upstream-commit: 88d47514b82e7c44f00f2b2a72ff6dd12158038c
   adaptation: portable-chat-inherited
 ---
 
@@ -30,9 +30,11 @@ Distinguish source inspection, local checks, CI results, and deployed/provider b
 
 Lead with what changed and whether anything needs the user. In plain language, cover the requested outcomes, what is done or still running, failures or unchecked behavior, and work the agent can still do.
 
-List an action item only when the user owns the decision, approval, or missing access. Give the context, recommendation, and effect of deferring it. Authorized work the agent can complete is not an action item. Preserve existing approval boundaries and do not invent a decision to fill the reply.
+List every pending action item the user owns: a decision, approval, or missing access, including those raised before the reporting interval. For each item, give its recognizable name and available link, what it changes for users, your recommendation, the evidence behind it, and its risk. Mark necessary unknown facts explicitly. Authorized work the agent can complete is not an action item. Preserve existing approval boundaries and do not invent a decision to fill the reply.
 
-Aim for about 150 words when the scope permits, preserving material evidence and gaps. Use the user's language and recognizable names. Link existing detail instead of repeating commands and logs.
+When one decision covers several items, state the decision and recommendation once, then list each affected item with its own context, evidence, and risk, highest risk first. For competing options, give each option's gain and cost. Explain the cost of waiting only when it adds a concrete consequence beyond delay.
+
+Keep the progress summary short, usually under 100 words. Let the reply grow with the pending decisions; never omit an item, compress the list into a count, or substitute a link for the context needed to decide. Use the user's language and recognizable names. Links add detail; the reply itself must support each decision.
 
 ## Visual evidence
 

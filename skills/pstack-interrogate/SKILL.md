@@ -3,8 +3,8 @@ name: pstack-interrogate
 description: "Perform an adversarial review with independent passes using the active chat model. Use when asked to challenge a diff, find blind spots, or stress-test a design; return findings without applying fixes."
 license: MIT
 metadata:
-  upstream: https://github.com/cursor/plugins/tree/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/interrogate
-  upstream-commit: e5136d82418d2db3165ea1050d17577cd618cc05
+  upstream: https://github.com/cursor/plugins/tree/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/pstack/skills/interrogate
+  upstream-commit: 4dd1d05818d19792e7cd6e818f1667f95f7e1dbe
   adaptation: portable-chat-inherited
 ---
 
@@ -30,6 +30,12 @@ If delegation is unavailable or inheritance cannot be guaranteed, perform explic
 
 Apply the rubric in [references/rubric.md](references/rubric.md). Trace every suspected defect through the real inputs and call chain. Broaden source inspection to relevant consumers, not unrelated changes. Reviewers do not edit files, post comments, or run state-mutating live operations.
 
+## Reproduce suspected failures
+
+For each behavioral defect, try a bounded failing test, repro script, or command against the exact reviewed code. Capture the command, actual output, and expected behavior; rerun a reviewer's reproduction before accepting its runtime claim. For designs, use an authorized isolated prototype or probe when it can settle the failure case. Keep temporary repros outside active checkouts and follow test-selection and resource policies.
+
+When execution is unavailable or disproportionate, retain concrete source-backed findings and label them static or unverified; do not describe them as reproduced. Preserve the review's read-only scope and obtain any required authorization before a state-mutating live probe. This procedure does not invoke Arena.
+
 ## Lead judgment
 
 Read and verify each finding against current artifacts. Deduplicate by mechanism. Keep lone findings when their proof is sound. Agreement helps prioritize checking; it is never the acceptance rule. Record disagreements and the evidence resolving them.
@@ -38,4 +44,4 @@ Classify findings as act on, consider, noted, or dismissed. A blocking finding r
 
 ## Deliver
 
-Lead with actionable findings ordered by practical impact, with tight source references and reproductions where available. Summarize reviewed scope, performed verification, and limitations. State when no actionable issue was found. Leave fixes and public review comments for the user's authorized request.
+Lead with actionable findings ordered by practical impact, with tight source references and, for reproduced findings, the exact command, actual output, and expected behavior. Report dropped concerns with a brief reason. Summarize reviewed scope, performed verification, and limitations. State when no actionable issue was found. Leave fixes and public review comments for the user's authorized request.

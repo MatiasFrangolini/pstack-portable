@@ -3,8 +3,8 @@ name: pstack-mode
 description: "Route an explicitly requested pstack engineering workflow through investigation, design, impact review, measurement, or real verification. Use when the user names pstack-mode or asks to work in that style."
 license: MIT
 metadata:
-  upstream: https://github.com/cursor/plugins/tree/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/poteto-mode
-  upstream-commit: e5136d82418d2db3165ea1050d17577cd618cc05
+  upstream: https://github.com/cursor/plugins/tree/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/pstack/skills/poteto-mode
+  upstream-commit: 4dd1d05818d19792e7cd6e818f1667f95f7e1dbe
   adaptation: portable-chat-inherited
 ---
 
@@ -20,7 +20,7 @@ Use available file, search, terminal, browser, history, and connector tools. Fol
 
 ## Start with the requested outcome
 
-Distinguish read-only investigation, design, review, implementation, measurement, verification, and publication. Record scope, preserved behavior, and the observable done condition.
+Distinguish read-only investigation, design, review, implementation, measurement, verification, and publication. Record scope, preserved behavior, and the observable done condition. Open a nontrivial task with a short restatement of the user's goal and the smallest expected change; refine it as evidence arrives without adding a confirmation gate. Carry that goal into any authorized worker brief and the final handoff.
 
 For a simple edit, work directly. For a cross-layer task, inspect existing feature maps, ownership, contracts, and instructions first. A request for all cases needs a bounded coverage list.
 
@@ -45,7 +45,7 @@ The sibling skills below are optional helpers, not hidden prerequisites. Read th
 | TypeScript model or boundary risks | pstack-typescript-best-practices |
 | Explanation or prose cleanup | pstack-teach, pstack-unslop |
 
-Reuse applicable existing architecture, design, review, testing, and PR workflows instead of stacking redundant procedures.
+Existing architecture, design, review, test-audit, and PR skills remain valid. Reuse the applicable established workflow instead of stacking redundant procedures.
 
 ## Arena and swarm require explicit opt-in
 

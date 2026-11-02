@@ -3,8 +3,8 @@ name: pstack-typescript-best-practices
 description: "Improve TypeScript domain types and input boundaries where casts, optional-field bags, duplicate schemas, or mixed semantic identifiers cause defects. Use for targeted type modeling or TypeScript quality reviews."
 license: MIT
 metadata:
-  upstream: https://github.com/cursor/plugins/tree/ccb5507cec1546dc88135c1139c811e6c59115ba/pstack/skills/typescript-best-practices
-  upstream-commit: ccb5507cec1546dc88135c1139c811e6c59115ba
+  upstream: https://github.com/cursor/plugins/tree/88d47514b82e7c44f00f2b2a72ff6dd12158038c/pstack/skills/typescript-best-practices
+  upstream-commit: 88d47514b82e7c44f00f2b2a72ff6dd12158038c
   adaptation: portable-chat-inherited
 ---
 
@@ -34,7 +34,9 @@ Parse once into a domain value. Keep transport and persistence representations w
 
 Prefer narrowing and exhaustive variants over unsafe assertions. Use satisfies to check object shape without widening literals. Derive appropriate types from authoritative contracts, but do not expose private wire types just to avoid a small domain definition.
 
-Type assertions can be legitimate after a validator proves the required invariant. Record the actual proof rather than banning syntax mechanically. A predicate must verify everything it claims.
+Prefer a verifying type predicate when existing validation can construct a branded value by narrowing, so the parse function returns the validated value without a cast. A predicate such as `input is AgentId` must verify the actual domain invariant; its annotation alone proves nothing. Reuse the repository's brand and validator conventions.
+
+Type assertions can be legitimate after a validator proves the required invariant. Record the actual proof rather than banning syntax mechanically.
 
 A TypeScript number can be negative, infinite, or NaN. A start-plus-duration representation does not prove a valid range without a validated duration. Dates, timezone semantics, and runtime array indexing also need genuine invariants.
 

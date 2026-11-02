@@ -5,6 +5,7 @@ license: MIT
 metadata:
   upstream: https://github.com/cursor/plugins/tree/ccb5507cec1546dc88135c1139c811e6c59115ba/pstack/skills/benchmark-checklist
   upstream-commit: ccb5507cec1546dc88135c1139c811e6c59115ba
+  upstream-principle: https://github.com/cursor/plugins/tree/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/pstack/skills/principle-explain-the-number
   adaptation: portable-chat-inherited
 ---
 
@@ -19,6 +20,8 @@ Use the active chat model and its current reasoning settings. Delegate only when
 Use available file, search, terminal, browser, history, and connector tools. Follow the user's scope, authorization, repository instructions, and local resource controls. A skill invocation does not authorize publication, unrelated changes, or external messages.
 
 ## Define the experiment
+
+Before running, name the decision the measurement informs, the result that would change it, and the expected noise floor. If repeated run-to-run spread exceeds the effect, report the result as inconclusive and stop that comparison or redesign the experiment.
 
 Write the claim with its unit, workload, and measured interval. Inspect the measurement code: what starts the clock, ends it, counts as one sample, and stays outside it.
 

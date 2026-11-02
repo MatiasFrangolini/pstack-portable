@@ -1,6 +1,6 @@
 # pstack-portable
 
-21 portable engineering skills: 20 adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack) by Lauren Tan ([@Poteto](https://x.com/poteto)) and one selective maintenance workflow.
+24 portable engineering skills: 23 adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack) by Lauren Tan ([@Poteto](https://x.com/poteto)) and one selective maintenance workflow.
 
 Use the model and reasoning settings already active in your chat. Discover the tools your harness actually provides. Keep parallel candidate generation and coverage opt-in. Preserve local adaptations when upstream changes.
 
@@ -50,7 +50,7 @@ The other procedures can be called directly. Missing sibling skills are handled 
 
 All adapted skills preserve the active chat model and reasoning settings, discover available tools, respect the user's authorization, and distinguish verified results from assumptions. They do not select provider-specific models or start publication just because a workflow was invoked.
 
-Compared against [upstream 0.15.25 at e5136d8](https://github.com/cursor/plugins/tree/e5136d82418d2db3165ea1050d17577cd618cc05/pstack). The per-skill metadata retains the original adaptation source.
+Synchronized with the maintainer's installed adaptations on 2026-11-02. The installed review checkpoint records comparison through [upstream ae5650f](https://github.com/cursor/plugins/tree/ae5650febf4320793844c12c4adaa937f417f8da/pstack); this publication verifies the released fingerprints against that evidence, without rerunning the upstream behavioral review. Per-skill metadata retains the original adaptation source. Fresh installations use the updated public release baseline; private installation state and machine-specific policy are excluded.
 
 | Upstream | Included skill | Main adaptation or limitation |
 | --- | --- | --- |
@@ -66,6 +66,9 @@ Compared against [upstream 0.15.25 at e5136d8](https://github.com/cursor/plugins
 | recall | [pstack-recall](skills/pstack-recall/SKILL.md) | Discover authorized history access; reconcile with current artifacts; no fixed transcript directory or schema. |
 | create-verification-skill | [pstack-create-verification-skill](skills/pstack-create-verification-skill/SKILL.md) | Generate and execute a project-specific recipe using existing controls; prove usable startup and preserve evidence. |
 | maintain-verification-skill | [pstack-maintain-verification-skill](skills/pstack-maintain-verification-skill/SKILL.md) | Source and live coverage audit; repair owned verification material; product changes and publication remain separately scoped. |
+| create-formal-verification-skill | [pstack-create-formal-verification-skill](skills/pstack-create-formal-verification-skill/SKILL.md) | Build and check a bounded project-local formal model; state assumptions and distinguish model evidence from implementation proof. |
+| maintain-formal-verification-skill | [pstack-maintain-formal-verification-skill](skills/pstack-maintain-formal-verification-skill/SKILL.md) | Reconcile an existing model and harness with changed source, rerun the checks, and distinguish stale models from defects. |
+| statechart | [pstack-statechart](skills/pstack-statechart/SKILL.md) | Bounded TLA+/TLC analysis and Pele rendering; native Windows uses the direct worker with explicit dependencies and cancellation limits. |
 | figure-it-out | [pstack-figure-it-out](skills/pstack-figure-it-out/SKILL.md) | Small verifiable experiments; test a shared premise after repeated failures; no perpetual loop or automatic PRs. |
 | show-me-your-work | [pstack-show-me-your-work](skills/pstack-show-me-your-work/SKILL.md) | Portable append-only TSV evidence trail; no automatic commit/publication or dependence on one transcript format. |
 | correct | [pstack-correct](skills/pstack-correct/SKILL.md) | Structural enforcement for demonstrated recurring mistakes; scoped proof rather than global policy edits after every correction. |
@@ -108,7 +111,7 @@ The core is plain `SKILL.md` instructions with supporting data. It assumes no ma
 
 Actual access to a browser, history, connectors, subagents, or filesystem writes depends on the host. Missing capabilities must be disclosed. Same-model review and sequential self-review do not reproduce a multi-model panel.
 
-The collection's format, references, provenance, and public-data boundaries are checked before publication. NPX discovery and isolated project installation are validated with the skills CLI. Selected workflows and updater no-op comparison have been exercised in one desktop agent environment; all 21 workflows have not been executed on every supported harness. Fresh-install updater baselines are checked against the distributed files. A genuinely new upstream update and its installation path need separate live evidence.
+This publication checks skill format, references, provenance, source-copy integrity, public-data boundaries, and the 23 reviewed release fingerprints against the distributed files. The new statechart helpers receive syntax checks; TLC execution, Pele rendering, and every workflow across every harness are not rerun for this publication. Earlier releases exercised NPX discovery, isolated project installation, selected workflows, and an updater no-op comparison; those are historical results, not fresh runs here. A genuinely new upstream update and its installation path need separate live evidence.
 
 ## License
 
