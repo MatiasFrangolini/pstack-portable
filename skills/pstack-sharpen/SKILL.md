@@ -5,6 +5,7 @@ license: MIT
 metadata:
   upstream: https://github.com/cursor/plugins/tree/e5136d82418d2db3165ea1050d17577cd618cc05/pstack/skills/sharpen
   upstream-commit: e5136d82418d2db3165ea1050d17577cd618cc05
+  upstream-update: https://github.com/cursor/plugins/tree/aaeb0ea3a0584995aa8f55ce44c6c5259414b896/pstack/skills/sharpen
   adaptation: portable-chat-inherited
 ---
 
@@ -22,7 +23,7 @@ Use available file, search, terminal, browser, history, and connector tools. Fol
 
 Identify the outcome the user needs and how an experienced practitioner would establish it: primary sources, the actual working method, and a check against evidence outside the proposed answer. Inspect existing tools, patterns, and authoritative artifacts before adding a procedure.
 
-Resolve observable facts directly. Fill missing specification only as far as needed; leave product and preference decisions with the user. Preserve explicit constraints, budget, compatibility, and authorization. Simplify your own unnecessary assumptions rather than silently relaxing the user's requirements.
+Resolve observable facts directly. If a small, reversible prototype can settle a consequential technical choice, run it within the authorized scope and base the recommendation on what it shows. Fill gaps only as far as needed and leave product and preference decisions with the user. Preserve explicit constraints, budget, compatibility, and authorization.
 
 Keep one proportional check of the result, such as exercising the real behavior, comparing with an authoritative source or supplied design, or running an existing focused check. Use the host's resource controls. A separate reviewer, new test suite, benchmark, or parallel candidate workflow is not required. If the check is unavailable or the user limits verification, state the exact gap without claiming success.
 

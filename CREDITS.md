@@ -6,7 +6,7 @@
 
 This collection is an unofficial, independent adaptation. It is not endorsed by or affiliated with the original author or the upstream repository's owner. The original copyright and license notices are retained in the adapted skill directories and the root license.
 
-The public release baseline records the maintainer's installed review checkpoint through commit [`ae5650febf4320793844c12c4adaa937f417f8da`](https://github.com/cursor/plugins/tree/ae5650febf4320793844c12c4adaa937f417f8da/pstack). Individual skills preserve their own `metadata.upstream` and `metadata.upstream-commit`, which identify the source used for that adaptation. A later reviewed-through commit is recorded separately from the adaptation source. Release fingerprints describe the actual distributed LF files; the installed files were matched against their local reviewed fingerprints before line-ending normalization.
+The public release baseline records the maintainer's installed review checkpoint through commit [`41e400932eca14f289e7db717a70455256b6d388`](https://github.com/cursor/plugins/tree/41e400932eca14f289e7db717a70455256b6d388/pstack). Individual skills preserve their own `metadata.upstream` and `metadata.upstream-commit`, which identify the source used for that adaptation (plus `metadata.upstream-update` where selective later updates were applied). A later reviewed-through commit is recorded separately from the adaptation source. Release fingerprints describe the actual distributed LF files; the installed files were matched against their local reviewed fingerprints before line-ending normalization.
 
 ## Portable adaptation
 

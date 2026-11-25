@@ -50,7 +50,7 @@ The other procedures can be called directly. Missing sibling skills are handled 
 
 All adapted skills preserve the active chat model and reasoning settings, discover available tools, respect the user's authorization, and distinguish verified results from assumptions. They do not select provider-specific models or start publication just because a workflow was invoked.
 
-Synchronized with the maintainer's installed adaptations on 2026-11-02. The installed review checkpoint records comparison through [upstream ae5650f](https://github.com/cursor/plugins/tree/ae5650febf4320793844c12c4adaa937f417f8da/pstack); this publication verifies the released fingerprints against that evidence, without rerunning the upstream behavioral review. Per-skill metadata retains the original adaptation source. Fresh installations use the updated public release baseline; private installation state and machine-specific policy are excluded.
+Synchronized with the maintainer's installed adaptations on 2026-11-25. The installed review checkpoint records comparison through [upstream 41e4009](https://github.com/cursor/plugins/tree/41e400932eca14f289e7db717a70455256b6d388/pstack) (incorporating compatible updates from `aaeb0ea3` for `pstack-statechart`, `pstack-sharpen`, and `pstack-recall`); this publication verifies the released fingerprints against that evidence, without rerunning the upstream behavioral review. Per-skill metadata retains the original adaptation source and upstream update reference. Fresh installations use the updated public release baseline; private installation state and machine-specific policy are excluded.
 
 | Upstream | Included skill | Main adaptation or limitation |
 | --- | --- | --- |
@@ -68,7 +68,7 @@ Synchronized with the maintainer's installed adaptations on 2026-11-02. The inst
 | maintain-verification-skill | [pstack-maintain-verification-skill](skills/pstack-maintain-verification-skill/SKILL.md) | Source and live coverage audit; repair owned verification material; product changes and publication remain separately scoped. |
 | create-formal-verification-skill | [pstack-create-formal-verification-skill](skills/pstack-create-formal-verification-skill/SKILL.md) | Build and check a bounded project-local formal model; state assumptions and distinguish model evidence from implementation proof. |
 | maintain-formal-verification-skill | [pstack-maintain-formal-verification-skill](skills/pstack-maintain-formal-verification-skill/SKILL.md) | Reconcile an existing model and harness with changed source, rerun the checks, and distinguish stale models from defects. |
-| statechart | [pstack-statechart](skills/pstack-statechart/SKILL.md) | Bounded TLA+/TLC analysis and Pele rendering; native Windows uses the direct worker with explicit dependencies and cancellation limits. |
+| statechart | [pstack-statechart](skills/pstack-statechart/SKILL.md) | Bounded TLA+/TLC analysis and Pele rendering; includes native Windows CLI (`scripts/statechart.ts`), SANY diagnostics, and nested initial states. |
 | figure-it-out | [pstack-figure-it-out](skills/pstack-figure-it-out/SKILL.md) | Small verifiable experiments; test a shared premise after repeated failures; no perpetual loop or automatic PRs. |
 | show-me-your-work | [pstack-show-me-your-work](skills/pstack-show-me-your-work/SKILL.md) | Portable append-only TSV evidence trail; no automatic commit/publication or dependence on one transcript format. |
 | correct | [pstack-correct](skills/pstack-correct/SKILL.md) | Structural enforcement for demonstrated recurring mistakes; scoped proof rather than global policy edits after every correction. |
@@ -88,6 +88,7 @@ Some capabilities are portable but outside this collection's defaults. Others ne
 | setup-pstack | Intentionally omitted | Per-role model/effort selection conflicts with inheriting the current chat settings. |
 | no-comments | Intentionally omitted | A blanket comment-deletion workflow is not a default engineering policy here. |
 | reflect | Could be adapted separately | Retrospective policy edits and backlog publication require their own requested scope. |
+| reframe | Could be adapted separately | Optional terminology discovery for unfamiliar domains; kept out of default bundle until requested. |
 | automate-me | Could be adapted separately | A personal mode needs authorized history and selection of conventions for that installation. |
 | technical-writing, tdd | Intentionally omitted | Writing standards and test-first behavior are task/repository decisions; this release avoids another universal policy. |
 | bro, in-your-own-words | Lightweight overlap | Explanation, prose cleanup, and direct prompting cover the useful capability. |

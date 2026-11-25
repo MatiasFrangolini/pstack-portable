@@ -5,6 +5,7 @@ license: MIT
 metadata:
   upstream: https://github.com/cursor/plugins/tree/ccb5507cec1546dc88135c1139c811e6c59115ba/pstack/skills/recall
   upstream-commit: ccb5507cec1546dc88135c1139c811e6c59115ba
+  upstream-update: https://github.com/cursor/plugins/tree/aaeb0ea3a0584995aa8f55ce44c6c5259414b896/pstack/skills/recall
   adaptation: portable-chat-inherited
 ---
 
@@ -30,7 +31,9 @@ Read metadata and relevant user messages first, then decisions, corrections, fin
 
 Group by user goal. Identify decisions, completed work, open items, reverted attempts, blockers, and exact artifact references.
 
-Check current branch, worktree, dirty changes, remote PR state, tickets, or deployment only where they determine the brief. Label unavailable checks as historical or unverified. Neither a branch name nor a past final response proves current integration. Read the shared issue or incident record when it changes the feature's status.
+Check current branch, worktree, dirty changes, remote PR state, tickets, or deployment only where they determine the brief. Label unavailable checks as historical or unverified. Neither a branch name nor a past final response proves current integration.
+
+For a named feature or bug, check the relevant shared record for attempts that failed or were reverted and for symptoms people still report. Use available PRs, tickets, or incident records and name any consequential gaps.
 
 ## Deliver
 

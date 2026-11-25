@@ -5,6 +5,7 @@ license: MIT
 metadata:
   upstream: https://github.com/cursor/plugins/tree/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/pstack/skills/statechart
   upstream-commit: 4dd1d05818d19792e7cd6e818f1667f95f7e1dbe
+  upstream-update: https://github.com/cursor/plugins/tree/aaeb0ea3a0584995aa8f55ce44c6c5259414b896/pstack/skills/statechart
   adaptation: portable-chat-inherited
 ---
 
@@ -24,9 +25,9 @@ Write the spec, config, and optional view in task-owned storage. Map modeled act
 
 Run the bundled helper under the host's finite-job resource controls. On a Unix-like host use `sh scripts/statechart` with a spec and optional `--config`, `--view`, and new `--out` directory. The command exits 0 when checks pass, 1 on a rule violation, and 2 on errors. A chart may be omitted for larger state spaces; inspect `report.md` and TLC output in all cases.
 
-On Windows the upstream CLI uses Unix process groups and is not supported natively. Run the bundled `scripts/worker.ts` directly with Node instead, supplying four separate arguments: an existing empty task-owned stage directory, the spec path, config path, and optional view path. Use the host's resource launcher for the Node process. The worker writes `done/report.md`, `done/tlc.out`, and when available `done/chart.mmd` under that stage; it exits 0 for a pass, 1 for a violation, and 2 for an error. The stage and any residual temporary files belong to this run. This direct worker does not provide the Unix CLI's interrupted-process cleanup; use the host's normal cancellation and inspect owned processes and files if interrupted.
+On native Windows run `node <skill-dir>/scripts/statechart.ts` with the same arguments. Pass each argument separately through the host resource launcher. The CLI publishes results for exits 0 and 1. On interruption, use the host cancellation mechanism and verify cleanup of the worker, Java child, and temporary directories owned by the run.
 
-Do not run the worker concurrently against the same stage. Preserve output and command, dependency versions, model bounds, assumptions, unchecked rules, and any hidden chart steps. An execution failure or a rule not checked is not a pass.
+Give each run its own output directory. Preserve output and command, dependency versions, model bounds, assumptions, unchecked rules, and any hidden chart steps. An execution failure or a rule not checked is not a pass.
 
 ## Render with Pele
 
